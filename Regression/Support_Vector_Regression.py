@@ -18,6 +18,8 @@ y = dataset.iloc[:,-1].values
 #Feature scaling
 y = y.reshape(len(y),1)
 # print(y)
+
+#Feature Scaling
 from sklearn.preprocessing import StandardScaler
 sc_X = StandardScaler()
 sc_y = StandardScaler()
