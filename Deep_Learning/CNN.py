@@ -2,7 +2,7 @@
 
 #Importing libraries
 import tensorflow as tf
-from tensorflow.keras.preprocessing.image import ImageDataGenerator
+from tensorflow.keras.preprocessing.image import ImageDataGenerator # type: ignore
 
 # print(tf.__version__)
 
@@ -50,7 +50,7 @@ cnn.fit(x= training_set,validation_data = test_set, epochs = 25)
 
 #Prediction
 import numpy as np
-from tensorflow.keras.preprocessing import image
+from tensorflow.keras.preprocessing import image # type: ignore
 
 test_image = image.load_img('Deep_Learning/dataset/prediction/cat_or_dog_1.png', target_size = (64,64))
 test_image = image.img_to_array(test_image)
